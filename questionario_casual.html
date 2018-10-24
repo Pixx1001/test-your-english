@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+  <script src="js/jquery-2.2.0.min.js"></script>
+	<title>Test your English</title>
+	<meta charset="utf-8" />
+	<link rel="icon" href="img/icon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/script.js"></script>
+  </head>    
+  <body onload="showq1()">
+
+
+	<header>
+	  <img id="logo" width="160px" height="90px" src="img/amflag.gif">
+	  <img id="logo2" width="260px" height="90px" src="img/ifsp3.png">
+	  <p>Test Your English<br/>
+		<span class="headertitle">Answer the questions now!</span>
+
+	  </p>
+	</header>
+
+	<nav>
+	  <div class="wrapper navbar">
+
+		<ul>
+		  <li><a href="index.php"> <img src="img/index.png" /> Início</a></li>
+		  <li><a href="#" onclick="alert('Responda ao Formulário da página inicial primeiro');"> <img src="img/quest.png" /> Questionário</a></li>
+		  <li><a href="about.php"> <img src="img/info.png" /> Sobre</a></li>
+		  <li><a href="contact.php"> <img src="img/contato.png" /> Contato</a></li>
+		  <li class="login oculta"><img src="img/login.png" /> <span id="usuario"></span> <a href="#" onclick="logoff()"> Sair</a></li>
+		</ul>
+	  </div> <!-- .wrapper -->
+	</nav>
+	<div id="esconder"><span class="glyphicon glyphicon-th" ></span></div>
+
+	<div id="row">
+	  <aside class="aside well col-sm-2">  
+		<h2 class="center">Questões</h2>
+
+		<div id="quest">
+		  <ul>
+			<li class="linkq" id="linkq1" ><a onclick="showq1();" href="#">1</a></li>
+			<li class="linkq" id="linkq2"><a onclick="showq2();" href="#">2</a></li>
+			<li class="linkq" id="linkq3"><a onclick="showq3();" href="#">3</a></li>
+			<li class="linkq" id="linkq4"><a onclick="showq4();" href="#">4</a></li>
+			<li><a onclick="showq5();" href="#">5</a></li>
+			<li><a onclick="showq6();" href="#">6</a></li>
+			<li><a onclick="showq7();" href="#">7</a></li>
+			<li><a onclick="showq8();" href="#">8</a></li>
+			<li><a onclick="showq9();" href="#">9</a></li>
+			<li><a onclick="showq10();" href="#">10</a></li>
+		  </ul>
+		</div>
+
+		<div>
+		  <p><b>Tipo de prova:</b> Leitura</p>
+		  <br/>
+		  <p><b>Dificuldade:</b> Avançado</p>
+		  <br/>
+		  <p><b>Tempo Restante:</b> N/A</p>
+		  <p>
+			<br/>
+			<b>Progresso:</b>
+		  </p>
+		  <p id="progresso">
+			<progress max="10" value="1"></progress>
+		  </p>
+		  <p><br>
+			<img onclick="tema();" src="img/theme.png" class="tema"> 
+		  </p>
+
+		</div>
+	  </aside>
+	  <div class="col-sm-10">
+		<form id="form1" action="final.php" method="post">
+		<input type="hidden" name ="level" value="1">
+		  <div class="questao" id="questao1">
+			<h2>Questão 1:</h2>
+
+			<p>
+			  <p><h2 id="current" onclick="deleta();">WHAT IS HTML?</h2>
+				HTML is a computer language devised to allow website creation. These
+				websites can then be viewed by anyone else connected to
+				the Internet. It is relatively easy to learn, with the
+				basics being accessible to most people in one sitting
+				; and quite powerful in what it allows you to create.
+				It is constantly undergoing revision and evolution to
+				meet the demands and requirements of the growing Internet
+				audience under the direction of the » W3C, the organisation
+				charged with designing and maintaining the language.
+				The definition of HTML is HyperText Markup Language.<br/><br/>
+				<b> •	HYPERTEXT</b> is the method by which you move around on the web — by clicking on special text called hyperlinks which bring you to the next page. The fact that it is HYPER just means it is not linear — i.e. you can go to any place on the Internet whenever you want by clicking on links — there is no set order to do things in.<br/>
+				<b> •	MARKUP</b> is what HTML tags do to the text inside them. They mark it as a certain type of text (ITALICISED text, for example).<br/>
+				<b> •	HTML </b>is a LANGUAGE, as it has code-words and syntax like any other language.<br/>
+			  </p>
+			  <p><b>1- According to the text above,  HTML is a Markup Language that uses:</b></p>
+			</p>
+
+			<div>
+			  <input checked="checked" type="radio" name="q1" value="1" />
+			  <label for="q1">1) Only Text and hyperlinks</label>
+			</div>
+			<div>
+			  <input type="radio"  name="q1" value="2" />
+			  <label for="q2">2) Hypertext</label>
+			</div>
+			<div>
+			  <input type="radio" name="q1" value="3" />
+			  <label for="q3">3) Markup (Tags), code-words and hyperlinks </label>
+			</div>
+			<div>
+			  <input type="radio" name="q1" value="4" />
+			  <label for="q4">4) Internet</label>
+			</div>
+			<div>
+			  <input type="radio" name="q1" value="5" />
+			  <label for="q5">5) Just Code-words</label>
+			</div>
+
+			<input type="button" onclick="showq2();" value="Confirmar" />
+		  </div>
+
+		  <div class="questao" id="questao2">
+			<h2>Questão 2:</h2>
+
+			<p><h2>WHAT ARE STYLESHEETS?</h2>
+			  In the late ‘90s, HTML coders noticed that they were retyping the same
+			  old tags again and again on the same page, leading to bigger HTML files
+			  and above all, time consumption and frustration. You may have found 
+			  yourself in the same situation, adding in mountains of font tags, despite
+			  wanting them all the same; or using tricks like invisible gifs for spacing.
+			  Then, someone had a great idea: have one file that defines all the values
+			  that those piles of tags would have done, and then have all your pages 
+			  checking this file and formatting your pages accordingly. You can therefore
+			  leave out most of the formatting tags in HTML and use only nice structural
+			  elements (like headings, paragraphs and links) — separating structure and presentation.
+			  In late 1996 CSS (Cascading StyleSheets) became a reality, forged by our
+			  good friends the » World Wide Web Consortium (W3C). Your stylesheet acts
+			  as a partner to your HTML code; taking care of all the layout, fonts,
+			  colours and overall LOOK of your site.
+
+			</p>
+			<p><b>2- According to the text ,CSS (Cascading Style Sheets) Take care of:</b></p>
+
+			<div>
+			  <div>
+				<input type="radio" name="q2" value="1" id="answer1" />
+				<label for="answer1">1) Connection of website</label>
+			  </div>
+			  <div>
+				<input type="radio" name="q2" value="2" id="answer2" />
+				<label for="answer2">2) All the layout, fonts, colours and overall look of your site</label>
+			  </div>
+			  <div>
+				<input type="radio" name="q2" value="3" id="answer3" />
+				<label for="answer3">3) Nothing,  Just to add piles of tags in a single file </label>
+			  </div>
+			  <div>
+				<input type="radio" name="q2" value="4" id="answer4" />
+				<label for="answer4">4) Fonts </label>
+			  </div>
+			  <div>
+				<input type="radio" name="q2" value="5" id="answer5" />
+				<label for="answer5">5) Animation in a site</label>
+			  </div>
+
+			  <input type="button" onclick="showq3();" value="Confirmar" />
+
+			</div>
+		  </div>
+		  <div class="questao" id="questao3">
+			<h2>Questão 3:</h2>
+
+			<p><h2>PROGRAMMING AND COMPUTER SCIENCE</h2>
+			  Programming is the process of taking an algorithm and encoding it into a
+			  notation, a programming language, so that it can be executed by a
+			  computer. Although many programming languages and many different types 
+			  of computers exist, the important first step is the need to have the 
+			  solution. Without an algorithm there can be no program.
+			  Computer science is not the study of programming. Programming, however,
+			  is an important part of what a computer scientist does. Programming is
+			  often the way that we create a representation for our solutions.
+			  Therefore, this language representation and the process of creating
+			  it becomes a fundamental part of the discipline.
+			</p>
+			<p><b>3- The text above tell us about “Programming”. What is the  fundamental to run a program?</b></p>
+
+
+			<div>
+			  <div>
+				<input type="radio" name="q3" value="1" id="answer1" />
+				<label for="answer1">1) Algorithm</label>
+			  </div>
+			  <div>
+				<input type="radio" name="q3" value="2" id="answer2" />
+				<label for="answer2">2) Language</label>
+			  </div>
+			  <div>
+				<input type="radio" name="q3" value="3" id="answer3" />
+				<label for="answer3">3) A specific computer </label>
+			  </div>
+			  <div>
+				<input type="radio" name="q3" value="4" id="answer4" />
+				<label for="answer4">4) Know computer science </label>
+			  </div>
+			  <div>
+				<input type="radio" name="q3" value="5" id="answer5" />
+				<label for="answer5">5) Nothing, just the computer</label>
+			  </div>
+
+			  <input type="button" onclick="showq4();" value="Confirmar" />
+
+			</div>
+
+
+		  </div>
+		  <div class="questao" id="questao4">
+			<h2>Questão 4:</h2>
+
+
+			<h2>INTERNET</h2>
+			<p>Alternatively referred to as the net or web, the Internet was initially developed to aid 
+			  in the progress of computing technology by linking all the best academic computer centers. 
+			  The Internet as we know it today first started being developed in the late 1960 and transmitted its 
+			  first message on Friday, October 29, 1969. In 1993, the Internet experienced one of its largest growths to date 
+			  and today is accessible by people all over the world. the Internet contains billions of web pages created by 
+			  people and companies from around the world, making it a limitless place to locate information and entertainment. 
+			  The Internet also has thousands of services that help make life more convenient. For example, 
+			  many financial institutions offer online transactions that enables a user to manage and view their account online. 
+			  The picture is a representation and map of the Internet done by The Opte Project.</p>
+			<p><b>4- The internet brings many things to us. According to the text, which are?</b></p>
+
+
+			<div>
+			  <div>
+				<input type="radio" name="q4" value="1" id="answer1" />
+				<label for="answer1">1) Webpages, information, services and entertainment </label>
+			  </div>
+			  <div>
+				<input type="radio" name="q4" value="2" id="answer1" />
+				<label for="answer2">2) Information</label>
+			  </div>
+			  <div>
+				<input type="radio" name="q4" value="3" id="answer1" />
+				<label for="answer3">3) Data </label>
+			  </div>
+			  <div>
+				<input type="radio" name="q4" value="4" id="answer1" />
+				<label for="answer4">4) Files </label>
+			  </div>
+			  <div>
+				<input type="radio" name="q4" value="5" id="answer1" />
+				<label for="answer5">5) Just Webpages</label>
+				<input type="button" onclick="showq5();" value="Confirmar" />
+
+			  </div>
+			</div>
+
+		  </div>
+		  <div class="questao" id="questao5">
+			<h2>Questão 5:</h2>
+
+			<p><h2>WHAT IS SOCIAL MEDIA?</h2>
+			  Social networking on social media websites involves the use of the internet to connect users with their friends, family and acquaintances. Social media websites are not necessarily about meeting new people online, although this does happen. Instead, they are primarily about connecting with friends, family and acquaintances you already have in real life.
+			  The most well-known social media sites are Facebook, Twitter, Instagram and LinkedIn. These sites allow you to share photos, videos and information, organise events, chat, and play online games.Often, each of your "friends" (Facebook) or "followers" (Twitter) will be connected to each other. Just like in real life, the connections between people aren't just one-on-one, but a network of connections. This online social network is useful for spreading
+			</p>
+			<p><b>5- What a media site does?:</b></p>
+
+
+			<div>
+			  <div>
+				<input type="radio" name="q5" value="1" id="answer1" />
+				<label for="answer1">1) Post photos </label>
+			  </div>
+			  <div>
+				<input type="radio" name="q5" value="2" id="answer2" />
+				<label for="answer2">2) Show information</label>
+			  </div>
+			  <div>
+				<input type="radio" name="q5" value="3" id="answer3" />
+				<label for="answer3">3) Make pages </label>
+			  </div>
+			  <div>
+				<input type="radio" name="q5" value="4" id="answer4" />
+				<label for="answer4">4) Uses Internet to connect people</label>
+			  </div>
+			  <div>
+				<input type="radio" name="q5" value="5" id="answer5" />
+				<label for="answer5">5) Publish selfies</label>
+			  </div>
+
+			  <input type="button" onclick="showq6();" value="Confirmar" />
+			</div>
+
+
+		  </div>
+
+		  <div class="questao" id="questao6">
+			<p><h2>COMPUTER HARDWARE</h2>
+			  Computer hardware is the collection of physical components that constitute a computer system. Computer hardware is the physical parts or components of a computer, such as monitor, keyboard, computer data storage, graphic card, sound card, motherboard, and so on, all of which are tangible objects.[1] By contrast, software is instructions that can be stored and run by hardware.
+			  Hardware is directed by the software to execute any command or instruction. A combination of hardware and software forms a usable computing system.[2]
+
+			</p>
+			<p><b>6- What is the difference between hardware and software?</b></p>
+
+
+			<div>
+			  <div>
+				<input type="radio" name="q6" value="1" id="answer1" />
+				<label for="answer1">1) They are almost the same thing, there´s no difference. </label>
+			  </div>
+			  <div>
+				<input type="radio" name="q6" value="2" id="answer2" />
+				<label for="answer2">2) I Can´t touch both hardware and software.</label>
+			  </div>
+			  <div>
+				<input type="radio" name="q6" value="3" id="answer3" />
+				<label for="answer3">3) I can touch the software, the hardware, no. </label>
+			  </div>
+			  <div>
+				<input type="radio" name="q6" value="4" id="answer4" />
+				<label for="answer4">4) Hardware I can touch, softwares no</label>
+			  </div>
+			  <div>
+				<input type="radio" name="q6" value="5" id="answer5" />
+				<label for="answer5">5) Hardware I can touch, softwares too.</label>
+			  </div>
+
+			  <input type="button" onclick="showq7();" value="Confirmar" />
+
+			</div>
+
+
+		  </div>
+
+		  <div class="questao" id="questao7">
+			<h2>Questão 7:</h2>
+
+			<p><h2>YOUR PROFILE PAGE</h2>
+			  When you sign up to a social media site you need to provide your email address to verify your identity. This will automatically create your profile page. Depending on the social media site you're using, a profile page usually allows you to post a picture and a few general details about you and your interests. Your friends will be able to see your profile page and the information that you share. They will also be able to leave comments or share information with you on your profile page. When signing up you don't have to fill all the fields in your profile – think carefully about what you want people to know about you before you fill it in. You can usually adjust this information later on if you need to.
+			</p>
+			<p><b>7- What type of information have a profile page?</b></p>
+
+
+			<div>
+			  <div>
+				<input type="radio" name="q7" value="1" id="answer1" />
+				<label for="answer1">1)Just your name and adress </label>
+			  </div>
+			  <div>
+				<input type="radio" name="q7" value="2" id="answer2" />
+				<label for="answer2">2) Adress, Name, photo and other some personal data.</label>
+			  </div>
+			  <div>
+				<input type="radio" name="q7" value="3" id="answer3" />
+				<label for="answer3">3) Photo And name </label>
+			  </div>
+			  <div>
+				<input type="radio" name="q7" value="4" id="answer4" />
+				<label for="answer4">4) Photo, name, address, Identity documents</label>
+			  </div>
+			  <div>
+				<input type="radio" name="q7" value="5" id="answer5" />
+				<label for="answer5">5) Photo, name And adress.</label>
+			  </div>
+
+			  <input type="button" onclick="showq8();" value="Confirmar" />
+			</div>
+
+		  </div>
+
+		  <div class="questao" id="questao8">
+			<h2>Questão 8:</h2>
+
+			<p><h2>PRIVACY</h2>
+			  Social media sites have a variety of privacy settings you can adjust. This means you can control who sees your profile page and other information you share on the site. Some people do not mind having their personal information available for anyone to view online. However, we strongly recommend that you don't publish your index address and be mindful of posting other personal information about yourself (including your birthday), or others especially if you don't have their permission.
+			  It's worth keeping in mind that if malicious parties have access to your full name and date of birth and using other available information – for example which suburb you live in - it is possible that you could fall victim to identity theft. Just as you wouldn't give your mobile number or bank details to anyone who asked, you should guard access to all the details of your social networking account. For more on this issue, visit the SCAMwatch website.
+			  Some people who use social media prefer only to allow people they have officially become friends with to see their profile and other information. It is important to note that for most social media sites (including Facebook) the default privacy setting is NOT to hide your information when you sign up. If you don't want your profile and other information to be seen by people who aren't a "friend" or "follower", you will have to check these settings and adjust them accordingly after you sign up. You can usually do this on the site - look for a link to "Privacy" or "Settings" to adjust this.
+			</p>
+			<p><b>8- What is the best way to protect your personal data on the web? </b></p>
+
+
+			<div>
+			  <div>
+				<input type="radio" name="q8" value="1" id="answer1" />
+				<label for="answer1">1) Post your index address</label>
+			  </div>
+			  <div>
+				<input type="radio" name="q8" value="2" id="answer2" />
+				<label for="answer2">2) Don’t post your index address, information about yourself or others</label>
+			  </div>
+			  <div>
+				<input type="radio" name="q8" value="3" id="answer3" />
+				<label for="answer3">3) Don´t post photos</label>
+			  </div>
+			  <div>
+				<input type="radio" name="q8" value="4" id="answer4" />
+				<label for="answer4">4) Don’t publish texts</label>
+			  </div>
+			  <div>
+				<input type="radio" name="q8" value="5" id="answer5" />
+				<label for="answer5">5) Don’t use the internet</label>
+			  </div>
+
+			  <input type="button" onclick="showq9();" value="Confirmar" />
+
+			</div>
+
+		  </div>
+
+		  <div class="questao" id="questao9">
+			<h2>Questão 9:</h2>
+
+			<p><h2>DATA MINING</h2>
+			  Data mining is the computing process of discovering patterns in large data sets involving methods at the intersection of artificial intelligence, machine learning, statistics, and database systems.[1] It is an interdisciplinary subfield of computer science.[1][2][3] The overall goal of the data mining process is to extract information from a data set and transform it into an understandable structure for further use.[1] Aside from the raw analysis step, it involves database and data management aspects, data pre-processing, model and inference considerations, interestingness metrics, complexity considerations, post-processing of discovered structures, visualization, and online updating.[1] Data mining is the analysis step of the "knowledge discovery in databases" process, or KDD.        </p>
+			<p><b>9- What is the objective of “Data mining”? </b></p>
+
+
+			<div>
+			  <div>
+				<input type="radio" name="q9" value="1" id="answer1" />
+				<label for="answer1">1) “Mine” your data</label>
+			  </div>
+			  <div>
+				<input type="radio" name="q9" value="2" id="answer2" />
+				<label for="answer2">2) - Extract and Steal personal info for an understandable structure for further use</label>
+			  </div>
+			  <div>
+				<input type="radio" name="q9" value="3" id="answer3" />
+				<label for="answer3">3) Extract infos from a a data set and transform into an understandable structure for further use </label>
+			  </div>
+			  <div>
+				<input type="radio" name="q9" value="4" id="answer4" />
+				<label for="answer4">4) Is to mine your personal data for selling</label>
+			  </div>
+			  <div>
+				<input type="radio" name="q9" value="5" id="answer5" />
+				<label for="answer5">5) “Mine” And process your data to optimize your web experience</label>
+			  </div>
+
+			  <input type="button" onclick="showq10();" value="Confirmar" />
+
+			</div>
+
+
+		  </div>
+
+		  <div class="questao" id="questao10">
+			<h2>Questão 10:</h2>
+
+			<p><h2>MOBILE COMPUTING</h2>
+
+
+			Mobile computing is a generic term that refers to a variety of devices that allow people to access data and information from wherever they are. Sometimes referred to as "human-computer interaction," mobile computing transports data, voice and video over a network via a mobile device.  Mobile devices can be connected to a local area network (LAN), or they can take advantage of Wi-Fi or wireless technology by connecting via a wireless local area network (WLAN).
+			The Benefits of Mobile Computing:<br/><br/>
+			•	Connectivity: You can stay connected to all sources at all times.<br/>
+			•	Social Engagement: You can interact with a variety of users via the Internet.<br/>
+			•	Personalization: You can tailor your mobile computing to your individual <br/>
+			<p><b>10- What is the advantages of mobile computing?:</b></p>
+
+
+			<div>
+			  <div>
+				<input type="radio" name="q10" value="1" id="answer1" />
+				<label for="answer1">1) - Stay connected to all sources, any time, Interact with many users on web and personalize</label>
+			  </div>
+			  <div>
+				<input type="radio" name="q10" value="2" id="answer2" />
+				<label for="answer2">2)  Stay Connected into Lans</label>
+			  </div>
+			  <div>
+				<input type="radio" name="q10" value="3" id="answer3" />
+				<label for="answer3">3) Stay connected to all sources, and interact with users </label>
+			  </div>
+			  <div>
+				<input type="radio" name="q10" value="4" id="answer4" />
+				<label for="answer4">4) Personnalization and making your mobile individual</label>
+			  </div>
+			  <div>
+				<input type="radio" name="q10" value="5" id="answer5" />
+				<label for="answer5">5) Any, this isn´t necessary</label>
+			  </div>
+
+			  <input type="submit" onclick="" value="FINALIZAR TESTE" />
+			</div>
+
+		  </div>
+
+		</form>		  		
+	  </div>
+	</div>
+
+	<div class="push"></div>
+
+	<footer>
+	  <div class="wrapper">
+		<p>Copyright &copy; 2017</p>
+		<p>Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - Câmpus Caraguatatuba</p>
+		<p>Técnico em Informática para Internet - 1&ordm; Módulo</p>   
+	  </div> <!-- .wrapper -->
+	</footer>
+      <script>init();</script>
+      <script src="js/jquery-2.2.0.min.js"></script>
+      <script src="js/jquery-ui.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/script.js"></script>
+      
+  </body>
+</html>

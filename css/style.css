@@ -1,0 +1,752 @@
+/* TYE-IFSP CSS
+* Autor: Diego Lopes
+* © 2017 1° Semestre Técnico Informática p/ Web
+*/
+*{
+    margin : 0px;
+    padding : 0px;
+}
+
+.wrapper
+{
+    margin : auto;
+}
+
+body
+{
+    font-family : 'Roboto', sans-serif;
+    font-size : 16px;
+    min-width : 700px;
+}
+
+
+
+header
+{
+    background-color : #104E88;
+    height : 100px;
+    min-width : 700px;
+    text-decoration : none;
+    color : white;
+    background-image : url(header7.png);
+    background-clip : content-box;
+    background-size : cover;
+    background-repeat : no-repeat;
+}
+
+header p
+{
+    font-size : 30px;
+    text-decoration : none;
+    font-weight : bold;
+}
+
+header .headertitle
+{
+    font-size : 20px;
+    text-decoration : none;
+    font-weight : 100;
+}
+
+#logo
+{
+    float : left;
+    margin : 5px;
+    margin-right : 10px;
+}
+
+#logo2
+{
+    float : right;
+    margin : 5px;
+    margin-right : 10px;
+}
+
+nav
+{
+    font-size : 17px;
+    font-weight : bold;
+    text-align : center;
+    word-spacing : 5px;
+    text-transform : uppercase;
+    background-color : #104E88;
+    width : 100%;
+    margin-bottom : 10px;
+}
+
+
+.teste
+{
+    list-style-type : square;
+}
+
+nav ul
+{
+    padding : 10px 0px;
+   
+}
+
+ul, ol{
+    margin-bottom: 0px !important;
+}
+
+nav li
+{
+    display : inline;
+    padding : 0px 30px;
+    list-style-type : square;
+}
+
+nav a
+{
+    color : #FDE1E1;
+    text-decoration : none;
+}
+
+h1
+{
+    color : #BB1B26;
+}
+
+
+.aside
+{
+    display : none;
+    color : white;
+    text-align : left;
+    padding : 10px;
+    background-color : #104E88;
+}
+
+.aside h2
+{
+    margin-bottom : 8px;
+}
+
+.aside #quest
+{
+    margin-bottom : 8px;
+    padding : 4px;
+}
+
+.aside progress
+{
+    width : 100px;
+}
+
+.center
+{
+    text-align : center;
+}
+
+aside div p
+{
+    margin-bottom : 4px;
+    color : floralwhite;
+}
+
+.aside div b
+{
+    color : whitesmoke;
+}
+
+.row
+{
+    display : inline !important;
+}
+
+aside div
+{
+    margin : 0px auto;
+    display : block;
+    text-align : center;
+}
+
+.aside ul
+{
+    max-width : 220px;
+    list-style-type : none;
+    padding-left : 0px;
+    margin : 0px auto;
+    display : table;
+}
+
+.aside ul li
+{
+    border : 1px solid black;
+    width : 35px;
+    height : 35px;
+    background-color : #008BCE;
+    color : white;
+    padding : 5px;
+    text-decoration : none;
+    margin : 2px;
+    text-align : center;
+    display : inline-block;
+}
+
+li a
+{
+    text-decoration : none;
+    color : White;
+    padding : 0px;
+    line-height : 30px;
+}
+
+.navbar ul
+{
+    padding : 0;
+}
+
+.navbar li
+{
+    padding : 0 30px;
+    height : 55px;
+}
+
+.navbar li
+{
+    display : inline-block;
+    line-height : 60px;
+    color : white;
+}
+
+.navbar li:hover
+{
+    background-color : #BB1B26;
+}
+
+.navbar img
+{
+    width : 20px;
+    height : 20px;
+}
+
+.oculta
+{
+    display : none !important;
+}
+
+.login a
+{
+    color : red;
+}
+
+.col ul li:hover
+{
+    background-color : #EE2222;
+}
+
+article
+{
+    padding : 10px;
+}
+
+article p, article h2
+{
+    margin-bottom : 10px;
+}
+
+form
+{
+    font-size : 14px !important;
+    background-color : WhiteSmoke;
+    padding : 10px;
+    box-shadow : 1px 0px 5px gray;
+    margin : 0px auto;
+    box-shadow : 1px 1px 5px gray;
+    color : black;
+}
+
+.termos
+{
+    text-align : center;
+    width : 400px;
+    margin : 20px auto;
+    color : #BB1B26;
+}
+
+.cadastro
+{
+    display : table;
+    background-color : WhiteSmoke;
+    padding : 30px 80px;
+    box-shadow : 1px 1px 5px gray;
+    margin : 0px auto;
+    box-shadow : 6px 6px 24px 1px rgba(0,0,0,1);
+    border-radius : 3px;
+    box-shadow : 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition : all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card
+{
+    background-color : whitesmoke;
+    padding : 30px 80px;
+    box-shadow : 1px 1px 5px gray;
+    margin : 0px auto;
+    margin-bottom : 30px;
+    box-shadow : 6px 6px 24px 1px rgba(0,0,0,1);
+    border-radius : 3px;
+    box-shadow : 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition : all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+table
+{
+    margin : 0px;
+    padding : 0px;
+}
+
+.black
+{
+    color : black;
+}
+
+.cadastro:hover
+{
+    box-shadow : 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.botaop
+{
+    width : 300px;
+}
+
+.botaop span
+{
+    float : left;
+    margin-left : 10px;
+    margin-top : 2px;
+}
+
+form input
+{
+    border : none;
+    border-color : #008BCE;
+    border-radius : 2px;
+    background-color : WhiteSmoke;
+    border-bottom : 2px solid #008BCE;
+}
+
+.grouped
+{
+    display : table;
+}
+
+.grouped #campus
+{
+    width : 180px;
+    display : table-cell;
+}
+
+.grouped #estado
+{
+    width : 50px;
+    display : table-cell;
+    border : none;
+    border-color : #008BCE;
+    border-radius : 2px;
+    background-color : WhiteSmoke;
+    border-bottom : 2px solid #008BCE;
+    position : relative;
+    top : 1px;
+}
+
+form select
+{
+    background-color : whitesmoke;
+    color : black;
+    border : none;
+    outline : none;
+    border-bottom : 1px solid black;
+}
+
+form select, .cadastro input
+{
+    margin-bottom : 15px;
+    display : block;
+    width : 100%;
+}
+
+form input:focus
+{
+    border : none;
+    border-color : #008BCE;
+    border-radius : 2px;
+    background-color : whitesmoke;
+    border-bottom : 2px solid #008BCE;
+    outline : none;
+}
+
+input[type="submit"]
+{
+    margin-top : 20px;
+    background-color : #BB1B26;
+    color : floralwhite;
+    padding : 5px 20px;
+    border : 0px;
+    border-radius : 2px;
+    margin : 0px auto;
+    display : block;
+    text-transform : uppercase;
+    box-shadow : 1px 0px 5px gray;
+}
+
+input[type="button"]
+{
+    margin-top : 10px;
+    background-color : #BB1B26;
+    color : floralwhite;
+    padding : 5px 20px;
+    border : 0px;
+    border-radius : 2px;
+    margin : 0px auto;
+    display : block;
+    text-transform : uppercase;
+    box-shadow : 1px 0px 5px gray;
+    margin-top : 20px;
+}
+
+footer
+{
+    min-width : 700px;
+    width : 100%;
+    padding : 10px 0;
+    text-align : center;
+    background-color : #104E88;
+    border-top : 10px solid #009ACD;
+    color : floralwhite;
+    clear : left;
+    font-size : 14px;
+}
+
+/* sticky-footer */
+body, html
+{
+    height : 100%;
+}
+
+#page
+{
+    min-height : 100%;
+    margin : 0 auto -92px;
+    background-color : #B7CADB;
+}
+
+footer, .push
+{
+    margin-top : 10px;
+    font-family : monospace;
+}
+
+
+.container
+{
+    width : 100%;
+    min-height : 70vh;
+    margin : 30px;
+}
+
+.col
+{
+    background-color : #104E88;
+}
+
+.col2
+{
+    background-color : #d6e5fc;
+    border-left : 5px solid #B7CADB;
+}
+
+.col3
+{
+    display : block;
+    background-color : #d6e5fc;
+    border-left : 5px solid #B7CADB;
+}
+
+.col3 td, th
+{
+    border : 1px solid black;
+}
+
+.colarticle
+{
+    display: block;
+    background-color : #EAEAEA;
+    color : #104E88;
+}
+
+.contacts
+{
+    display : flex;
+    flex-direction : row;
+    margin : 0px auto;
+    text-align : center;
+    width : 500px;
+}
+
+.contato
+{
+    flex : 1 1 10px;
+    text-align : center;
+    margin : 0px auto;
+    background-color : LightBlue;
+    padding : 10px;
+}
+
+.contato2
+{
+    flex : 1 1 0px;
+    text-align : center;
+    margin : 0px auto;
+    margin-left : 10px;
+    margin-right : 10px;
+    background-color : #B681C9;
+    padding : 10px;
+}
+
+.contato3
+{
+    flex : 1 1 0px;
+    text-align : center;
+    margin : 0px auto;
+    background-color : LightGreen;
+    padding : 10px;
+}
+
+.contato3, .contato2, .contato
+{
+    transition : transform 1s;
+}
+
+.contato3:hover, .contato:hover, .contato2:hover
+{
+    transform : rotate(360deg);
+}
+
+.caption
+{
+    display : table-caption;
+    text-align : center;
+    width : 410px;
+    color : DarkRed;
+    font-weight : bold;
+}
+
+.avisos
+{
+    margin-top : 20px;
+    background-color : #EAEAEA;
+    color : #104E88;
+    padding : 15px;
+    border-radius : 1px;
+    border-left : 5px solid #BB1B26;
+}
+
+.oldNewsButton
+{
+    float : right;
+    text-decoration : none;
+    color : blue;
+}
+
+.oldNewsButton:visited
+{
+    color : #EAEAEA;
+}
+
+.oldNews
+{
+    display : none;
+    margin-top : 20px;
+}
+
+:target
+{
+    display : block;
+}
+
+.q2
+{
+    visibility : visible;
+}
+
+.ok
+{
+    color : green;
+}
+
+.erro
+{
+    color : red;
+}
+
+.nota
+{
+    font-weight : bolder;
+    font-size : 40px;
+}
+
+.questao
+{
+    display : none;
+}
+
+#esconder
+{
+    display : none;
+}
+.aviso{
+    color:#BB1B26;
+    margin-right:5px;
+    font-size:35px !important;
+}
+
+.newsImagezx{
+    float: left;
+    border: 1px double Lightgray;
+    margin-right: 7px;
+}
+
+
+
+
+/*******************************************************
+    RESPONSIVIDADE DO SITE
+    Não mexa. já tá tudo esquematizado.
+    Qualquer edição feita aqui pode te dar dor de cabeça.
+    
+********************************************************/
+
+/*Botão*/
+@media (max-width:799px)
+{
+    header p{
+    font-size: 25px;
+    }
+    #esconder{ 
+    display : block;
+    border : 1px solid #BB1B26;
+    border-radius : 50px;
+    width : 50px;
+    height : 50px;
+    padding : 20px auto;
+    background-color : #BB1B26;
+    text-align : center;
+    padding-top : 15px;
+    position : absolute;
+    left : 10px;
+    right : 0px;
+    top : 152px;
+    z-index : 10;
+    color : white;
+    box-shadow : 1px 1px 5px black;
+}
+
+#esconder span{
+    color:white;
+    font-size:14px !important;
+}
+
+form .questao p{
+    font-size:20px !important;
+}
+
+p, span{
+    font-size:20px;
+}
+
+footer p{
+    font-size:16px;
+}
+
+.alert{
+    width:100% !important;
+}
+
+.avisos h4{
+    font-size:30px;
+}
+
+aside
+{
+    display : none;
+}
+
+#checaAluno button{
+    font-size:25px;
+}
+
+#alunoif,#naoaluno{
+    width:100%;
+}
+
+.newshead{
+    font-size:30px !important;
+    font-weight:bold;
+}
+
+
+
+.navbar li
+{
+    padding : 0 10px;
+    height : 50px;
+}
+
+.navbar li
+{
+    display : inline-block;
+    line-height : 60px;
+    color : white;
+}
+
+}
+
+@media (min-width: 800px)
+{
+.aside{
+    display : block;
+    color : white;
+    text-align : left;
+    padding : 10px;
+    background-color : #104E88;
+}
+
+.col-sm-2
+{
+    width : 25%;
+    float : left;
+}
+
+#esconder
+{
+    display : none;
+}
+
+.col-sm-10
+{
+    width : 75%;
+    float : left;
+}
+
+/**** RESPONSIVIDADE DO SITE ****/
+
+
+/*Tema escuro
+****************/
+}
+
+.tema
+{
+    width : 50px;
+    height : 50px;
+}
+
+.dark
+{
+    color : white;
+    background-color : black;
+}

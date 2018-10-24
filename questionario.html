@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Test your English</title>
+	<meta charset="utf-8" />
+	<link rel="icon" href="img/icon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/script.js"></script>
+</head>
+
+<body onload="showq1()">
+	<header>
+		<img id="logo" width="160px" height="90px" src="img/amflag.gif">
+		<img id="logo2" width="260px" height="90px" src="img/ifsp3.png">
+		<p>Test Your English<br/>
+			<span class="headertitle">Answer the quests now!</span>
+		</p>
+	</header>
+
+	<nav>
+		<div class="wrapper navbar">
+
+			<ul>
+				<li><a href="index.php"> <img src="img/index.png" /> Início</a></li>
+				<li><a href="#" onclick="alert('Responda ao Formulário da página inicial primeiro');"> <img src="img/quest.png" /> Questionário</a></li>
+				<li><a href="about.php"> <img src="img/info.png" /> Sobre</a></li>
+				<li><a href="contact.php"> <img src="img/contato.png" /> Contato</a></li>
+				<li class="login oculta"><img src="img/login.png" /> <span id="usuario"></span> <a href="#" onclick="logoff()"> Sair</a></li>
+			</ul>
+		</div>
+		<!-- .wrapper -->
+	</nav>
+	<div id="esconder"> <span class="glyphicon glyphicon-th"></span></div>
+
+	<div id="row">
+		<aside class="aside well col-sm-2">
+			<h2 class="center">Questões</h2>
+
+			<div id="quest">
+				<ul>
+					<li class="linkq" id="linkq1"><a onclick="showq1();" href="#">1</a></li>
+					<li class="linkq" id="linkq2"><a onclick="showq2();" href="#">2</a></li>
+					<li class="linkq" id="linkq3"><a onclick="showq3();" href="#">3</a></li>
+					<li class="linkq" id="linkq4"><a onclick="showq4();" href="#">4</a></li>
+					<li><a onclick="showq5();" href="#">5</a></li>
+					<li><a onclick="showq6();" href="#">6</a></li>
+					<li><a onclick="showq7();" href="#">7</a></li>
+					<li><a onclick="showq8();" href="#">8</a></li>
+					<li><a onclick="showq9();" href="#">9</a></li>
+					<li><a onclick="showq10();" href="#">10</a></li>
+					<li><a onclick="showq11();" href="#">11</a></li>
+					<li><a onclick="showq12();" href="#">12</a></li>
+					<li><a onclick="showq13();" href="#">13</a></li>
+					<li><a onclick="showq14();" href="#">14</a></li>
+					<li><a onclick="showq15();" href="#">15</a></li>
+					<li><a onclick="showq16();" href="#">16</a></li>
+					<li><a onclick="showq17();" href="#">17</a></li>
+					<li><a onclick="showq18();" href="#">18</a></li>
+					<li><a onclick="showq19();" href="#">19</a></li>
+					<li><a onclick="showq20();" href="#">20</a></li>
+					<li><a onclick="showq21();" href="#">21</a></li>
+					<li><a onclick="showq22();" href="#">22</a></li>
+					<li><a onclick="showq23();" href="#">23</a></li>
+					<li><a onclick="showq24();" href="#">24</a></li>
+					<li><a onclick="showq25();" href="#">25</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<p><b>Tipo de prova:</b> Leitura</p>
+				<br/>
+				<p><b>Dificuldade:</b> Avançado</p>
+				<br/>
+				<p><b>Tempo Restante:</b> N/A</p>
+				<p>
+					<br/>
+					<b>Progresso:</b>
+				</p>
+				<p id="progresso">
+					<progress max="25" value="1"></progress>
+				</p>
+				<p><br>
+					<img onclick="tema();" src="img/theme.png" class="tema">
+				</p>
+
+			</div>
+		</aside>
+		<div class="col-sm-10">
+			<form id="form1" action="final.php" method="post">
+				<input type="hidden" name="level" value="2">
+				<div class="questao" id="questao1">
+					<h2>Questão 1:</h2>
+
+					<p>
+						<p>
+							<h2 id="current" onclick="deleta();">WHAT IS HTML?</h2>
+							HTML is a computer language devised to allow website creation. These websites can then be viewed by anyone else connected
+							to the Internet. It is relatively easy to learn, with the basics being accessible to most people in one sitting ;
+							and quite powerful in what it allows you to create. It is constantly undergoing revision and evolution to meet the
+							demands and requirements of the growing Internet audience under the direction of the » W3C, the organisation charged
+							with designing and maintaining the language. The definition of HTML is HyperText Markup Language.<br/><br/>
+							<b> •	HYPERTEXT</b> is the method by which you move around on the web — by clicking on special text called hyperlinks
+							which bring you to the next page. The fact that it is HYPER just means it is not linear — i.e. you can go to any place
+							on the Internet whenever you want by clicking on links — there is no set order to do things in.<br/>
+							<b> •	MARKUP</b> is what HTML tags do to the text inside them. They mark it as a certain type of text (ITALICISED
+							text, for example).<br/>
+							<b> •	HTML </b>is a LANGUAGE, as it has code-words and syntax like any other language.<br/>
+						</p>
+						<p><b>1- According to the text above,  HTML is a Markup Language that uses:</b></p>
+					</p>
+
+					<div>
+						<input checked="checked" type="radio" name="q1" value="1" />
+						<label for="q1">1) Only Text and hyperlinks</label>
+					</div>
+					<div>
+						<input type="radio" name="q1" value="2" />
+						<label for="q2">2) Hypertext</label>
+					</div>
+					<div>
+						<input type="radio" name="q1" value="3" />
+						<label for="q3">3) Markup (Tags), code-words and hyperlinks </label>
+					</div>
+					<div>
+						<input type="radio" name="q1" value="4" />
+						<label for="q4">4) Internet</label>
+					</div>
+					<div>
+						<input type="radio" name="q1" value="5" />
+						<label for="q5">5) Just Code-words</label>
+					</div>
+
+					<input type="button" onclick="showq2();" value="Confirmar" />
+				</div>
+
+				<div class="questao" id="questao2">
+					<h2>Questão 2:</h2>
+
+					<p>
+						<h2>WHAT ARE STYLESHEETS?</h2>
+						In the late ‘90s, HTML coders noticed that they were retyping the same old tags again and again on the same page, leading
+						to bigger HTML files and above all, time consumption and frustration. You may have found yourself in the same situation,
+						adding in mountains of font tags, despite wanting them all the same; or using tricks like invisible gifs for spacing.
+						Then, someone had a great idea: have one file that defines all the values that those piles of tags would have done,
+						and then have all your pages checking this file and formatting your pages accordingly. You can therefore leave out
+						most of the formatting tags in HTML and use only nice structural elements (like headings, paragraphs and links) — separating
+						structure and presentation. In late 1996 CSS (Cascading StyleSheets) became a reality, forged by our good friends the
+						» World Wide Web Consortium (W3C). Your stylesheet acts as a partner to your HTML code; taking care of all the layout,
+						fonts, colours and overall LOOK of your site.
+
+					</p>
+					<p><b>2- According to the text ,CSS (Cascading Style Sheets) Take care of:</b></p>
+
+					<div>
+						<div>
+							<input type="radio" name="q2" value="1" id="answer1" />
+							<label for="answer1">1) Connection of website</label>
+						</div>
+						<div>
+							<input type="radio" name="q2" value="2" id="answer2" />
+							<label for="answer2">2) All the layout, fonts, colours and overall look of your site</label>
+						</div>
+						<div>
+							<input type="radio" name="q2" value="3" id="answer3" />
+							<label for="answer3">3) Nothing,  Just to add piles of tags in a single file </label>
+						</div>
+						<div>
+							<input type="radio" name="q2" value="4" id="answer4" />
+							<label for="answer4">4) Fonts </label>
+						</div>
+						<div>
+							<input type="radio" name="q2" value="5" id="answer5" />
+							<label for="answer5">5) Animation in a site</label>
+						</div>
+
+						<input type="button" onclick="showq3();" value="Confirmar" />
+
+					</div>
+				</div>
+				<div class="questao" id="questao3">
+					<h2>Questão 3:</h2>
+
+					<p>
+						<h2>PROGRAMMING AND COMPUTER SCIENCE</h2>
+						Programming is the process of taking an algorithm and encoding it into a notation, a programming language, so that it can
+						be executed by a computer. Although many programming languages and many different types of computers exist, the important
+						first step is the need to have the solution. Without an algorithm there can be no program. Computer science is not
+						the study of programming. Programming, however, is an important part of what a computer scientist does. Programming
+						is often the way that we create a representation for our solutions. Therefore, this language representation and the
+						process of creating it becomes a fundamental part of the discipline.
+					</p>
+					<p><b>3- The text above tell us about “Programming”. What is the  fundamental to run a program?</b></p>
+
+
+					<div>
+						<div>
+							<input type="radio" name="q3" value="1" id="answer1" />
+							<label for="answer1">1) Algorithm</label>
+						</div>
+						<div>
+							<input type="radio" name="q3" value="2" id="answer2" />
+							<label for="answer2">2) Language</label>
+						</div>
+						<div>
+							<input type="radio" name="q3" value="3" id="answer3" />
+							<label for="answer3">3) A specific computer </label>
+						</div>
+						<div>
+							<input type="radio" name="q3" value="4" id="answer4" />
+							<label for="answer4">4) Know computer science </label>
+						</div>
+						<div>
+							<input type="radio" name="q3" value="5" id="answer5" />
+							<label for="answer5">5) Nothing, just the computer</label>
+						</div>
+
+						<input type="button" onclick="showq4();" value="Confirmar" />
+
+					</div>
+
+
+				</div>
+				<div class="questao" id="questao4">
+					<h2>Questão 4:</h2>
+
+
+					<h2>INTERNET</h2>
+					<p>Alternatively referred to as the net or web, the Internet was initially developed to aid in the progress of computing
+						technology by linking all the best academic computer centers. The Internet as we know it today first started being
+						developed in the late 1960 and transmitted its first message on Friday, October 29, 1969. In 1993, the Internet experienced
+						one of its largest growths to date and today is accessible by people all over the world. the Internet contains billions
+						of web pages created by people and companies from around the world, making it a limitless place to locate information
+						and entertainment. The Internet also has thousands of services that help make life more convenient. For example, many
+						financial institutions offer online transactions that enables a user to manage and view their account online. The picture
+						is a representation and map of the Internet done by The Opte Project.</p>
+					<p><b>4- The internet brings many things to us. According to the text, which are?</b></p>
+
+
+					<div>
+						<div>
+							<input type="radio" name="q4" value="1" id="answer1" />
+							<label for="answer1">1) Webpages, information, services and entertainment </label>
+						</div>
+						<div>
+							<input type="radio" name="q4" value="2" id="answer1" />
+							<label for="answer2">2) Information</label>
+						</div>
+						<div>
+							<input type="radio" name="q4" value="3" id="answer1" />
+							<label for="answer3">3) Data </label>
+						</div>
+						<div>
+							<input type="radio" name="q4" value="4" id="answer1" />
+							<label for="answer4">4) Files </label>
+						</div>
+						<div>
+							<input type="radio" name="q4" value="5" id="answer1" />
+							<label for="answer5">5) Just Webpages</label>
+							<input type="button" onclick="showq5();" value="Confirmar" />
+
+						</div>
+					</div>
+
+				</div>
+				<div class="questao" id="questao5">
+					<h2>Questão 5:</h2>
+
+					<p>
+						<h2>WHAT IS SOCIAL MEDIA?</h2>
+						Social networking on social media websites involves the use of the internet to connect users with their friends, family and
+						acquaintances. Social media websites are not necessarily about meeting new people online, although this does happen.
+						Instead, they are primarily about connecting with friends, family and acquaintances you already have in real life.
+						The most well-known social media sites are Facebook, Twitter, Instagram and LinkedIn. These sites allow you to share
+						photos, videos and information, organise events, chat, and play online games.Often, each of your "friends" (Facebook)
+						or "followers" (Twitter) will be connected to each other. Just like in real life, the connections between people aren't
+						just one-on-one, but a network of connections. This online social network is useful for spreading
+					</p>
+					<p><b>5- What a media site does?:</b></p>
+
+
+					<div>
+						<div>
+							<input type="radio" name="q5" value="1" id="answer1" />
+							<label for="answer1">1) Post photos </label>
+						</div>
+						<div>
+							<input type="radio" name="q5" value="2" id="answer2" />
+							<label for="answer2">2) Show information</label>
+						</div>
+						<div>
+							<input type="radio" name="q5" value="3" id="answer3" />
+							<label for="answer3">3) Make pages </label>
+						</div>
+						<div>
+							<input type="radio" name="q5" value="4" id="answer4" />
+							<label for="answer4">4) Uses Internet to connect people</label>
+						</div>
+						<div>
+							<input type="radio" name="q5" value="5" id="answer5" />
+							<label for="answer5">5) Publish selfies</label>
+						</div>
+
+						<input type="button" onclick="showq6();" value="Confirmar" />
+					</div>
+
+
+				</div>
+
+				<div class="questao" id="questao6">
+					<p>
+						<h2>COMPUTER HARDWARE</h2>
+						Computer hardware is the collection of physical components that constitute a computer system. Computer hardware is the physical
+						parts or components of a computer, such as monitor, keyboard, computer data storage, graphic card, sound card, motherboard,
+						and so on, all of which are tangible objects.[1] By contrast, software is instructions that can be stored and run by
+						hardware. Hardware is directed by the software to execute any command or instruction. A combination of hardware and
+						software forms a usable computing system.[2]
+
+					</p>
+					<p><b>6- What is the difference between hardware and software?</b></p>
+
+
+					<div>
+						<div>
+							<input type="radio" name="q6" value="1" id="answer1" />
+							<label for="answer1">1) They are almost the same thing, there´s no difference. </label>
+						</div>
+						<div>
+							<input type="radio" name="q6" value="2" id="answer2" />
+							<label for="answer2">2) I Can´t touch both hardware and software.</label>
+						</div>
+						<div>
+							<input type="radio" name="q6" value="3" id="answer3" />
+							<label for="answer3">3) I can touch the software, the hardware, no. </label>
+						</div>
+						<div>
+							<input type="radio" name="q6" value="4" id="answer4" />
+							<label for="answer4">4) Hardware I can touch, softwares no</label>
+						</div>
+						<div>
+							<input type="radio" name="q6" value="5" id="answer5" />
+							<label for="answer5">5) Hardware I can touch, softwares too.</label>
+						</div>
+
+						<input type="button" onclick="showq7();" value="Confirmar" />
+
+					</div>
+
+
+				</div>
+
+				<div class="questao" id="questao7">
+					<h2>Questão 7:</h2>
+
+					<p>
+						<h2>YOUR PROFILE PAGE</h2>
+						When you sign up to a social media site you need to provide your email address to verify your identity. This will automatically
+						create your profile page. Depending on the social media site you're using, a profile page usually allows you to post
+						a picture and a few general details about you and your interests. Your friends will be able to see your profile page
+						and the information that you share. They will also be able to leave comments or share information with you on your
+						profile page. When signing up you don't have to fill all the fields in your profile – think carefully about what you
+						want people to know about you before you fill it in. You can usually adjust this information later on if you need to.
+					</p>
+					<p><b>7- What type of information have a profile page?</b></p>
+
+
+					<div>
+						<div>
+							<input type="radio" name="q7" value="1" id="answer1" />
+							<label for="answer1">1)Just your name and adress </label>
+						</div>
+						<div>
+							<input type="radio" name="q7" value="2" id="answer2" />
+							<label for="answer2">2) Adress, Name, photo and other some personal data.</label>
+						</div>
+						<div>
+							<input type="radio" name="q7" value="3" id="answer3" />
+							<label for="answer3">3) Photo And name </label>
+						</div>
+						<div>
+							<input type="radio" name="q7" value="4" id="answer4" />
+							<label for="answer4">4) Photo, name, address, Identity documents</label>
+						</div>
+						<div>
+							<input type="radio" name="q7" value="5" id="answer5" />
+							<label for="answer5">5) Photo, name And adress.</label>
+						</div>
+
+						<input type="button" onclick="showq8();" value="Confirmar" />
+					</div>
+
+				</div>
+
+				<div class="questao" id="questao8">
+					<h2>Questão 8:</h2>
+
+					<p>
+						<h2>PRIVACY</h2>
+						Social media sites have a variety of privacy settings you can adjust. This means you can control who sees your profile page
+						and other information you share on the site. Some people do not mind having their personal information available for
+						anyone to view online. However, we strongly recommend that you don't publish your index address and be mindful of posting
+						other personal information about yourself (including your birthday), or others especially if you don't have their permission.
+						It's worth keeping in mind that if malicious parties have access to your full name and date of birth and using other
+						available information – for example which suburb you live in - it is possible that you could fall victim to identity
+						theft. Just as you wouldn't give your mobile number or bank details to anyone who asked, you should guard access to
+						all the details of your social networking account. For more on this issue, visit the SCAMwatch website. Some people
+						who use social media prefer only to allow people they have officially become friends with to see their profile and
+						other information. It is important to note that for most social media sites (including Facebook) the default privacy
+						setting is NOT to hide your information when you sign up. If you don't want your profile and other information to be
+						seen by people who aren't a "friend" or "follower", you will have to check these settings and adjust them accordingly
+						after you sign up. You can usually do this on the site - look for a link to "Privacy" or "Settings" to adjust this.
+					</p>
+					<p><b>8- What is the best way to protect your personal data on the web? </b></p>
+
+
+					<div>
+						<div>
+							<input type="radio" name="q8" value="1" id="answer1" />
+							<label for="answer1">1) Post your index address</label>
+						</div>
+						<div>
+							<input type="radio" name="q8" value="2" id="answer2" />
+							<label for="answer2">2) Don’t post your index address, information about yourself or others</label>
+						</div>
+						<div>
+							<input type="radio" name="q8" value="3" id="answer3" />
+							<label for="answer3">3) Don´t post photos</label>
+						</div>
+						<div>
+							<input type="radio" name="q8" value="4" id="answer4" />
+							<label for="answer4">4) Don’t publish texts</label>
+						</div>
+						<div>
+							<input type="radio" name="q8" value="5" id="answer5" />
+							<label for="answer5">5) Don’t use the internet</label>
+						</div>
+
+						<input type="button" onclick="showq9();" value="Confirmar" />
+
+					</div>
+
+				</div>
+
+				<div class="questao" id="questao9">
+					<h2>Questão 9:</h2>
+
+					<p>
+						<h2>DATA MINING</h2>
+						Data mining is the computing process of discovering patterns in large data sets involving methods at the intersection of
+						artificial intelligence, machine learning, statistics, and database systems.[1] It is an interdisciplinary subfield
+						of computer science.[1][2][3] The overall goal of the data mining process is to extract information from a data set
+						and transform it into an understandable structure for further use.[1] Aside from the raw analysis step, it involves
+						database and data management aspects, data pre-processing, model and inference considerations, interestingness metrics,
+						complexity considerations, post-processing of discovered structures, visualization, and online updating.[1] Data mining
+						is the analysis step of the "knowledge discovery in databases" process, or KDD. </p>
+					<p><b>9- What is the objective of “Data mining”? </b></p>
+
+
+					<div>
+						<div>
+							<input type="radio" name="q9" value="1" id="answer1" />
+							<label for="answer1">1) “Mine” your data</label>
+						</div>
+						<div>
+							<input type="radio" name="q9" value="2" id="answer2" />
+							<label for="answer2">2) - Extract and Steal personal info for an understandable structure for further use</label>
+						</div>
+						<div>
+							<input type="radio" name="q9" value="3" id="answer3" />
+							<label for="answer3">3) Extract infos from a a data set and transform into an understandable structure for further use </label>
+						</div>
+						<div>
+							<input type="radio" name="q9" value="4" id="answer4" />
+							<label for="answer4">4) Is to mine your personal data for selling</label>
+						</div>
+						<div>
+							<input type="radio" name="q9" value="5" id="answer5" />
+							<label for="answer5">5) “Mine” And process your data to optimize your web experience</label>
+						</div>
+
+						<input type="button" onclick="showq10();" value="Confirmar" />
+
+					</div>
+
+
+				</div>
+
+				<div class="questao" id="questao10">
+					<h2>Questão 10:</h2>
+
+					<p>
+						<h2>MOBILE COMPUTING</h2>
+
+
+						Mobile computing is a generic term that refers to a variety of devices that allow people to access data and information from
+						wherever they are. Sometimes referred to as "human-computer interaction," mobile computing transports data, voice and
+						video over a network via a mobile device. Mobile devices can be connected to a local area network (LAN), or they can
+						take advantage of Wi-Fi or wireless technology by connecting via a wireless local area network (WLAN). The Benefits
+						of Mobile Computing:<br/><br/> • Connectivity: You can stay connected to all sources at all times.<br/> • Social
+						Engagement: You can interact with a variety of users via the Internet.<br/> • Personalization: You can tailor your
+						mobile computing to your individual <br/>
+						<p><b>10- What is the advantages of mobile computing?:</b></p>
+
+
+						<div>
+							<div>
+								<input type="radio" name="q10" value="1" id="answer1" />
+								<label for="answer1">1) - Stay connected to all sources, any time, Interact with many users on web and personalize</label>
+							</div>
+							<div>
+								<input type="radio" name="q10" value="2" id="answer2" />
+								<label for="answer2">2)  Stay Connected into Lans</label>
+							</div>
+							<div>
+								<input type="radio" name="q10" value="3" id="answer3" />
+								<label for="answer3">3) Stay connected to all sources, and interact with users </label>
+							</div>
+							<div>
+								<input type="radio" name="q10" value="4" id="answer4" />
+								<label for="answer4">4) Personnalization and making your mobile individual</label>
+							</div>
+							<div>
+								<input type="radio" name="q10" value="5" id="answer5" />
+								<label for="answer5">5) Any, this isn´t necessary</label>
+							</div>
+
+							<input type="button" onclick="showq11();" value="Confirmar" />
+						</div>
+
+				</div>
+
+				<div class="questao" id="questao11">
+					<h2>Questão 11:</h2>
+
+					<p>
+						<h2>WEBSITE HISTORY</h2>
+						The first websites were created in the early 1990s.[1] These sites were manually written in HTML. Over time, software was
+						created to help design web pages and by 1998 Dreamweaver had been established as the industry leader; however, some
+						have criticized the quality of the code produced by such software as being overblown and reliant on tables. As the
+						industry moved towards W3C standards, Dreamweaver and others were criticized for not being compliant. Compliance has
+						improved over time, but many professionals still prefer to write optimized markup by hand. Open source tools were typically
+						developed to the standards, and made fewer exceptions for the then dominant Internet Explorer's deviations from the
+						standards. The W3C started Amaya in 1996 to showcase Web technologies in a fully featured Web client. This was to provide
+						a framework that integrated lots of W3C technologies in a single, consistent environment. Amaya started as an HTML
+						and CSS editor and now supports XML, XHTML, MathML, and SVG.[2] Geocities was one of the first more modern website
+						builders that didn't require any technical skills. Five years after its launch in 1994 Yahoo! purchased it for $3.6
+						billion. After becoming technically outdated it was shut down in April 2009.[3]
+					</p>
+					<p><b>11- The text tell us about:</b></p>
+
+
+					<div>
+						<div>
+							<input type="radio" name="q11" value="1" id="answer1" />
+							<label for="answer1">1) The website history and the first sites </label>
+						</div>
+						<div>
+							<input type="radio" name="q11" value="2" id="answer2" />
+							<label for="answer2">2) The Open source tools used to make a site</label>
+						</div>
+						<div>
+							<input type="radio" name="q11" value="3" id="answer3" />
+							<label for="answer3">3) The website history and the internetFirst HTMLs </label>
+						</div>
+						<div>
+							<input type="radio" name="q11" value="4" id="answer4" />
+							<label for="answer4">4) First HTMLs </label>
+						</div>
+						<div>
+							<input type="radio" name="q11" value="5" id="answer5" />
+							<label for="answer5">5) Website history</label>
+						</div>
+
+						<input type="button" onclick="showq12();" value="Confirmar" />
+					</div>
+
+				</div>
+
+				<div class="questao" id="questao12">
+					<h2>Questão 12:</h2>
+
+					<p>
+						<h2>WEB DESIGN</h2>
+						Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different
+						areas of web design include web graphic design; interface design; authoring, including standardised code and proprietary
+						software; user experience design; and search engine optimization. Often many individuals will work in teams covering
+						different aspects of the design process, although some designers will cover them all.[1] The term web design is normally
+						used to describe the design process relating to the front-end (client side) design of a website including writing mark
+						up. Web design partially overlaps web engineering in the broader scope of web development. Web designers are expected
+						to have an awareness of usability and if their role involves creating mark up then they are also expected to be up
+						to date with web accessibility guidelines. </p>
+					<p><b>12- Web Design consists in:</b></p>
+
+
+					<div>
+						<div>
+							<input type="radio" name="q12" value="1" id="answer1" />
+							<label for="answer1">1) Interface design  in a page </label>
+						</div>
+						<div>
+							<input type="radio" name="q12" value="2" id="answer2" />
+							<label for="answer2">2) Markup Language</label>
+						</div>
+						<div>
+							<input type="radio" name="q12" value="3" id="answer3" />
+							<label for="answer3">3) Coding in Javacript </label>
+						</div>
+						<div>
+							<input type="radio" name="q12" value="4" id="answer4" />
+							<label for="answer4">4)  Photos </label>
+						</div>
+						<div>
+							<input type="radio" name="q12" value="5" id="answer5" />
+							<label for="answer5">5) Colors and texts</label>
+						</div>
+
+						<input type="button" onclick="showq13();" value="Confirmar" />
+
+					</div>
+
+
+				</div>
+
+				<div class="questao" id="questao13">
+					<h2>Questão 13:</h2>
+
+					<p>
+						<h2>END OF THE FIRST BROWSER WARS</h2>
+						During 1998 Netscape released Netscape Communicator code under an open source licence, enabling thousands of developers to
+						participate in improving the software. However, they decided to start from the beginning, which guided the development
+						of the open source browser and soon expanded to a complete application platform.[5] The Web Standards Project was formed
+						and promoted browser compliance with HTML and CSS standards by creating Acid1, Acid2, and Acid3 tests. 2000 was a big
+						year for Microsoft. Internet Explorer was released for Mac; this was significant as it was the first browser that fully
+						supported HTML 4.01 and CSS 1, raising the bar in terms of standards compliance. It was also the first browser to fully
+						support the PNG image format.[5] During this time Netscape was sold to AOL and this was seen as Netscape’s official
+						loss to Microsoft in the browser wars.[5]
+						<p><b>13- The Text talks about:</b></p>
+
+
+						<div>
+							<div>
+								<input type="radio" name="q13" value="1" id="answer1" />
+								<label for="answer1">1) The browser wars and about Microsoft browser </label>
+							</div>
+							<div>
+								<input type="radio" name="q13" value="2" id="answer2" />
+								<label for="answer2">2) The netscape browser</label>
+							</div>
+							<div>
+								<input type="radio" name="q13" value="3" id="answer3" />
+								<label for="answer3">3) The Microsoft browser</label>
+							</div>
+							<div>
+								<input type="radio" name="q13" value="4" id="answer4" />
+								<label for="answer4">4)  The browser wars and the Microsoft browser and netscape browser </label>
+							</div>
+							<div>
+								<input type="radio" name="q13" value="5" id="answer5" />
+								<label for="answer5">5) The Browser Wars</label>
+							</div>
+
+							<input type="button" onclick="showq14();" value="Confirmar" />
+
+						</div>
+
+
+				</div>
+
+				<div class="questao" id="questao14">
+					<h2>Questão 14:</h2>
+
+					<p>
+						<h2>GRAPHIC DESIGN</h2>
+						is the process of visual communication and problem-solving using one or more of typography, photography and illustration.
+						The field is considered a subset of visual communication and communication design, but sometimes the term "graphic
+						design" is used synonymously. Graphic designers create and combine symbols, images and text to form visual representations
+						of ideas and messages. They use typography, visual arts and page layout techniques to create visual compositions. Common
+						uses of graphic design include corporate design (logos and branding), editorial design (magazines, newspapers and books),
+						wayfinding or environmental design, advertising, web design, communication design, product packaging and signage.
+						<p><b>14- What is important in graphic design?</b></p>
+
+
+						<div>
+							<div>
+								<input type="radio" name="q14" value="1" id="answer1" />
+								<label for="answer1">1) Typography, Photography and illustration </label>
+							</div>
+							<div>
+								<input type="radio" name="q14" value="2" id="answer2" />
+								<label for="answer2">2) Visual arts, And photography</label>
+							</div>
+							<div>
+								<input type="radio" name="q14" value="3" id="answer3" />
+								<label for="answer3">3) Page Layout and environment design</label>
+							</div>
+							<div>
+								<input type="radio" name="q14" value="4" id="answer4" />
+								<label for="answer4">4)  Logos and branding </label>
+							</div>
+							<div>
+								<input type="radio" name="q14" value="5" id="answer5" />
+								<label for="answer5">5) Packaging and signage</label>
+							</div>
+
+							<input type="button" onclick="showq15();" value="Confirmar" />
+
+						</div>
+
+				</div>
+
+				<div class="questao" id="questao15">
+					<h2>Questão 15:</h2>
+
+					<p>
+						<h2>LOGO</h2>
+						A logo (abbreviation of logotype,[2] from Greek: λόγοςlogos "word" and τύπος typos "imprint") is a graphic mark, emblem,
+						or symbol commonly used by commercial enterprises, organizations, and even individuals to aid and promote instant public
+						recognition. There are purely graphic emblems, symbols, icons and logos, which are composed of the name of the organization
+						(a logotype or wordmark). In the days of hot metal typesetting, a logotype was one word cast as a single piece of type
+						(e.g. "The" in ATF Garamond, as opposed to a ligature, which is two or more letters joined, but not forming a word).[3]
+						By extension, the term was also used for a uniquely set and arranged typeface or colophon. At the level of mass communication
+						and in common usage, a company's logo is today often synonymous with its trademark or brand.[4]
+					</p>
+					<p><b>15- What is a logo and what it represents?</b></p>
+
+
+					<div>
+						<div>
+							<input type="radio" name="q15" value="1" id="answer1" />
+							<label for="answer1">1) Mark, Emblem or symbol </label>
+						</div>
+						<div>
+							<input type="radio" name="q15" value="2" id="answer2" />
+							<label for="answer2">2) Mark of companies</label>
+						</div>
+						<div>
+							<input type="radio" name="q15" value="3" id="answer3" />
+							<label for="answer3">3) Logotype</label>
+						</div>
+						<div>
+							<input type="radio" name="q15" value="4" id="answer4" />
+							<label for="answer4">4) Drawings and patterns</label>
+						</div>
+						<div>
+							<input type="radio" name="q15" value="5" id="answer5" />
+							<label for="answer5">5) Typeface</label>
+						</div>
+
+						<input type="button" onclick="showq16();" value="Confirmar" />
+
+					</div>
+
+
+				</div>
+
+				<div class="questao" id="questao16">
+					<h2>Questão 16:</h2>
+
+					<p>
+						<h2>GRAPHIC ART SOFTWARE</h2>
+						is a subclass of application software used for graphic design, multimedia development, stylized image development, technical
+						illustration, general image editing, or simply to access graphic files. Art software uses either raster or vector graphic
+						reading and editing methods to create, edit, and view art. Many artists and other creative professionals today use
+						personal computers rather than traditional media. Using graphic art software may be more efficient than rendering using
+						traditional media by requiring less hand–eye coordination, requiring less mental imaging skill, and utilizing the computer's
+						quicker (sometimes more accurate) automated rendering functions to create images. However, advanced level computer
+						styles, effects and editing methods may require a steeper learning curve of computer technical skills than what was
+						required to learn traditional hand rendering and mental imaging skills. The potential of the software to enhance or
+						hinder creativity may depend on the intuitiveness of the interface.
+					</p>
+					<p><b>16- What are the majority of people using this feature?</b></p>
+
+
+					<div>
+						<div>
+							<input type="radio" name="q16" value="1" id="answer1" />
+							<label for="answer1">1) Student</label>
+						</div>
+						<div>
+							<input type="radio" name="q16" value="2" id="answer2" />
+							<label for="answer2">2) Developers</label>
+						</div>
+						<div>
+							<input type="radio" name="q16" value="3" id="answer3" />
+							<label for="answer3">3)  Artist</label>
+						</div>
+						<div>
+							<input type="radio" name="q16" value="4" id="answer4" />
+							<label for="answer4">4) Media company </label>
+						</div>
+						<div>
+							<input type="radio" name="q16" value="5" id="answer5" />
+							<label for="answer5">5) Teacher</label>
+						</div>
+
+						<input type="button" onclick="showq17();" value="Confirmar" />
+					</div>
+
+
+				</div>
+
+				<div class="questao" id="questao17">
+					<h2>Questão 17:</h2>
+					<p>
+						<h2>DIGITAL ART</h2>
+						is an artistic work or practice that uses digital technology as an essential part of the creative or presentation process.
+						Since the 1970s, various names have been used to describe the process including computer art and multimedia art, and
+						digital art is itself placed under the larger umbrella term new media art.[1][2] After some initial resistance,[3]the
+						impact of digital technology has transformed activities such as painting, drawing, sculpture and music/sound art, while
+						new forms, such as net art, digital installation art, and virtual reality, have become recognized artistic practices.[4]More
+						generally the term digital artist is used to describe an artist who makes use of digital technologies in the production
+						of art. In an expanded sense, "digital art" is contemporary art that uses the methods of mass production or digital
+						media.[5] Lillian Schwartz's Comparison of Leonardo's self portrait and the Mona Lisa based on Schwartz's Mona Leo.
+						An example of a collage of digitally manipulated photographs The techniques of digital art are used extensively by
+						the mainstream media in advertisements, and by film-makers to produce visual effects. Desktop publishing has had a
+						huge impact on the publishing world, although that is more related to graphic design. Both digital and traditional
+						artists use many sources of electronic information and programs to create their work.[6] Given the parallels between
+						visual and musical arts, it is possible that general acceptance of the value of digital visual art will progress in
+						much the same way as the increased acceptance of electronically produced music over the last three decades.[7]
+					</p>
+					<p><b>17- What are the names it includes, to describe the process, and from what decade were these names used?</b></p>
+
+
+					<div>
+						<div>
+							<input type="radio" name="q17" value="1" id="answer1" />
+							<label for="answer1">1) Computer art and art of multimedia and analog art is placed under the umbrella term new media art.</label>
+						</div>
+						<div>
+							<input type="radio" name="q17" value="2" id="answer2" />
+							<label for="answer2">2) Cell phone art and art of music and digital art is placed under the term umbrella old media art.</label>
+						</div>
+						<div>
+							<input type="radio" name="q17" value="3" id="answer3" />
+							<label for="answer3">3)  Computer art and art of multimedia and digital art is placed under the umbrella term new media art.</label>
+						</div>
+						<div>
+							<input type="radio" name="q17" value="4" id="answer4" />
+							<label for="answer4">4) Art of drawing and art of riding cars and digital art is placed under the umbrella term new media art	 </label>
+						</div>
+						<div>
+							<input type="radio" name="q17" value="5" id="answer5" />
+							<label for="answer5">5) After some initial resistance,[3]the impact of digital technology has transformed activities such as painting</label>
+						</div>
+
+						<input type="button" onclick="showq18();" value="Confirmar" />
+
+					</div>
+
+
+				</div>
+
+				<div class="questao" id="questao18">
+					<h2>Questão 18:</h2>
+					<p>
+						<h2>GIF art</h2>
+						is a form of digital art, first emerging in 1987. The technology for the animated GIF has become more and more advanced through
+						the years. After 2010, a new generation of artists focused on experimenting with its potential for presenting creativity
+						on the World Wide Web. Mass access to the Internet allowed their GIFs to travel rapidly and virally online, through
+						social platforms such as Tumblr and Giphy, and to be recognized as a new form of art. GIF art has been around since
+						the year 1987, increasingly gaining attention from the audience some years after 2000.[1]contemporary art galleries
+						[2] and institutions like the Museum of the Moving Image (New York City) are popular among many young artists.[3][4]
+						GIF art animations have been exhibited in galleries and festivals around the world.[5][6][7][8][9] Some works are exhibited
+						in the form of physical, lenticular printed images.
+					</p>
+					<p><b>18- In which year this generation of artis was inspired to make these gifs?</b></p>
+
+
+					<div>
+						<div>
+							<input type="radio" name="q18" value="1" id="answer1" />
+							<label for="answer1">1) 1979 </label>
+						</div>
+						<div>
+							<input type="radio" name="q18" value="2" id="answer2" />
+							<label for="answer2">2) 1970</label>
+						</div>
+						<div>
+							<input type="radio" name="q18" value="3" id="answer3" />
+							<label for="answer3">3)  1987</label>
+						</div>
+						<div>
+							<input type="radio" name="q18" value="4" id="answer4" />
+							<label for="answer4">4) 2000 </label>
+						</div>
+						<div>
+							<input type="radio" name="q18" value="5" id="answer5" />
+							<label for="answer5">5) 2011 </label>
+						</div>
+
+						<input type="button" onclick="showq19();" value="Confirmar" />
+
+					</div>
+
+				</div>
+
+				<div class="questao" id="questao19">
+					<h2>Questão 19:</h2>
+					<p>
+						<h2>COMPUTER PROGRAMMING </h2>
+						(often shortened to programming) is a process that leads from an original formulation of a computing problem to executable
+						computer programs. Programming involves activities such as analysis, developing understanding, generating algorithms,
+						verification of requirements of algorithms including their correctness and resources consumption, and implementation
+						(commonly referred to as coding[1][2]) of algorithms in a target programming language. Source code is written in one
+						or more programming languages. The purpose of programming is to find a sequence of instructions that will automate
+						performing a specific task or solving a given problem. The process of programming thus often requires expertise in
+						many different subjects, including knowledge of the application domain, specialized algorithms, and formal logic. Related
+						tasks include testing, debugging, and maintaining the source code, implementation of the build system, and management
+						of derived artifacts such as machine code of computer programs. These might be considered part of the programming process,
+						but often the term software development is used for this larger process with the term programming, implementation,
+						or coding reserved for the actual writing of source code. Software engineering combines engineering techniques with
+						software development practices.
+					</p>
+					<p><b>19- What is a purpose of the programming language and the term of software development is its use for what purpose?</b></p>
+
+					<div>
+						<div>
+							<input type="radio" name="q19" value="1" id="answer1" />
+							<label for="answer1">1) The source code is written in one or more programming languages.</label>
+						</div>
+						<div>
+							<input type="radio" name="q19" value="2" id="answer2" />
+							<label for="answer2">2) The purpose of programming is to find a sequence of instructions that will either delete the execution of a specific task or do the famous reboot</label>
+						</div>
+						<div>
+							<input type="radio" name="q19" value="3" id="answer3" />
+							<label for="answer3">3) Involves activities such as analysis, development of understanding, generation of algorithms, verification of algorithm requirements</label>
+						</div>
+						<div>
+							<input type="radio" name="q19" value="4" id="answer4" />
+							<label for="answer4">4) The purpose of programming is to find a sequence of instructions that will automate the execution of a specific task or solve a particular problem.	 </label>
+						</div>
+						<div>
+							<input type="radio" name="q19" value="5" id="answer5" />
+							<label for="answer5">5) Including application domain knowledge, specialized algorithms, and formal logic.
+
+					  </label>
+						</div>
+
+						<input type="button" onclick="showq20();" value="Confirmar" />
+
+					</div>
+
+
+				</div>
+
+				<div class="questao" id="questao20">
+					<h2>Questão 20:</h2>
+					<p>
+						<h1> PROGRAMMING LANGUAGES</h1>
+						Main articles: Programming language and List of programming languages Different programming languages support different styles
+						of programming (called programming paradigms). The choice of language used is subject to many considerations, such
+						as company policy, suitability to task, availability of third-party packages, or individual preference. Ideally, the
+						programming language best suited for the task at hand will be selected. Trade-offs from this ideal involve finding
+						enough programmers who know the language to build a team, the availability of compilers for that language, and the
+						efficiency with which programs written in a given language execute. Languages form an approximate spectrum from "low-level"
+						to "high-level"; "low-level" languages are typically more machine-oriented and faster to execute, whereas "high-level"
+						languages are more abstract and easier to use but execute less quickly. It is usually easier to code in "high-level"
+						languages than in "low-level" ones. Allen Downey, in his book How To Think Like A Computer Scientist, writes: The details
+						look different in different languages, but a few basic instructions appear in just about every language: • Input: Gather
+						data from the keyboard, a file, or some other device. • Output: Display data on the screen or send data to a file or
+						other device. • Arithmetic: Perform basic arithmetical operations like addition and multiplication. • Conditional Execution:
+						Check for certain conditions and execute the appropriate sequence of statements. • Repetition: Perform some action
+						repeatedly, usually with some variation. Many computer languages provide a mechanism to call functions provided by
+						shared libraries. Provided the functions in a library follow the appropriate run-time conventions (e.g., method of
+						passing arguments), then these functions may be written in any other language.
+
+					</p>
+					<p>20-Which is easier to code languages, low level or high level?</p>
+
+					<div>
+						<div>
+							<input type="radio" name="q20" value="1" id="answer1" />
+							<label for="answer1">1)  Low level</label>
+						</div>
+						<div>
+							<input type="radio" name="q20" value="2" id="answer2" />
+							<label for="answer2">2)  High level</label>
+						</div>
+						<div>
+							<input type="radio" name="q20" value="3" id="answer3" />
+							<label for="answer3">3) Low level and high level</label>
+						</div>
+						<div>
+							<input type="radio" name="q20" value="4" id="answer4" />
+							<label for="answer4">4) Middle level</label>
+						</div>
+						<div>
+							<input type="radio" name="q20" value="5" id="answer5" />
+							<label for="answer5">5) None of the alternativess</label>
+						</div>
+
+						<input type="button" onclick="showq21();" value="Confirmar" />
+
+					</div>
+
+
+				</div>
+
+				<div class="questao" id="questao21">
+					<h2>Questão 21:</h2>
+
+					<p>
+						<h2>SOFTWARE ARCHITECTURE</h2>
+						Refers to the high level structures of a software system, the discipline of creating such structures, and the documentation
+						of these structures. These structures are needed to reason about the software system. Each structure comprises software
+						elements, relations among them, and properties of both elements and relations.[1] The architecture of a software system
+						is a metaphor, analogous to the architecture of a building.[2] Software architecture is about making fundamental structural
+						choices which are costly to change once implemented. Software architecture choices include specific structural options
+						from possibilities in the design of software. For example, the systems that controlled the space shuttle launch vehicle
+						had the requirement of being very fast and very reliable. Therefore, an appropriate real-time computing language would
+						need to be chosen. Additionally, to satisfy the need for reliability the choice could be made to have multiple redundant
+						and independently produced copies of the program, and to run these copies on independent hardware while cross-checking
+						results.
+					</p>
+					<p>21-A real-time computing language would need to be chosen for ?</p>
+
+
+
+					<div>
+						<div>
+							<input type="radio" name="q21" value="1" id="answer1" />
+							<label for="answer1">1) To have multiple redundant copies</label>
+						</div>
+						<div>
+							<input type="radio" name="q21" value="2" id="answer2" />
+							<label for="answer2">2) Play independently of program</label>
+						</div>
+						<div>
+							<input type="radio" name="q21" value="3" id="answer3" />
+							<label for="answer3">3) Meet the need for reliability </label>
+						</div>
+						<div>
+							<input type="radio" name="q21" value="4" id="answer4" />
+							<label for="answer4">4) Understand software elements</label>
+						</div>
+						<div>
+							<input type="radio" name="q21" value="5" id="answer5" />
+							<label for="answer5">5) The architecture of a systems</label>
+						</div>
+
+						<input type="button" onclick="showq22();" value="Confirmar" />
+
+					</div>
+
+
+				</div>
+
+				<div class="questao" id="questao22">
+					<h2>Questão 22:</h2>
+
+					<p>
+						<h2>WORLD WIDE WEB</h2>The World Wide Web (abbreviated WWW or the Web) is an information space where documents and other
+						web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed
+						via the Internet.[1] English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web
+						browser computer program in 1990 while employed at CERN in Switzerland.[2][3] The Web browser was released outside
+						of CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet
+						in August 1991. The World Wide Web has been central to the development of the Information Age and is the primary tool
+						billions of people use to interact on the Internet.[4][5][6] Web pages are primarily text documents formatted and annotated
+						with Hypertext Markup Language (HTML). In addition to formatted text, web pages may contain images, video, audio, and
+						software components that are rendered in the user's web browser as coherent pages of multimedia content. Embedded hyperlinks
+						permit users to navigate between web pages. Multiple web pages with a common theme, a common domain name, or both,
+						make up a website. Website content can largely be provided by the publisher, or interactive where users contribute
+						content or the content depends upon the user or their actions. Websites may be mostly informative, primarily for entertainment,
+						or largely for commercial, governmental, or non-governmental organisational purposes. In the 2006 Great British Design
+						Quest organised by the BBC and the Design Museum, the World Wide Web was voted among the top 10 British design .
+					</p>
+					<p>22-WWW is the abbreviation for?</p>
+
+
+					<div>
+						<div>
+							<input type="radio" name="q22" value="1" id="answer1" />
+							<label for="answer1">1) Wide  World Web</label>
+						</div>
+						<div>
+							<input type="radio" name="q22" value="2" id="answer2" />
+							<label for="answer2">2) Web Wide World</label>
+						</div>
+						<div>
+							<input type="radio" name="q22" value="3" id="answer3" />
+							<label for="answer3">3) Uniform Resource Locators</label>
+						</div>
+						<div>
+							<input type="radio" name="q22" value="4" id="answer4" />
+							<label for="answer4">4) World Wide Web</label>
+						</div>
+						<div>
+							<input type="radio" name="q22" value="5" id="answer5" />
+							<label for="answer5">5) Hypertext Markup Language</label>
+						</div>
+
+						<input type="button" onclick="showq23();" value="Confirmar" />
+
+					</div>
+
+
+				</div>
+
+				<div class="questao" id="questao23">
+					<h2>Questão 23:</h2>
+					<p>
+						<h2> WEB SECURITY</h2>
+						For criminals, the Web has become a venue to spread malware and engage in a range of cybercrimes, including identity theft,
+						fraud, espionage and intelligence gathering.[47] Web-based vulnerabilities now outnumber traditional computer security
+						concerns,[48][49] and as measured by Google, about one in ten web pages may contain malicious code.[50] Most web-based
+						attacks take place on legitimate websites, and most, as measured by Sophos, are hosted in the United States, China
+						and Russia.[51] The most common of all malware threats is SQL injection attacks against websites.[52] Through HTML
+						and URIs, the Web was vulnerable to attacks like cross-site scripting (XSS) that came with the introduction of JavaScript[53]
+						and were exacerbated to some degree by Web 2.0 and Ajax web design that favours the use of scripts.[54] Today by one
+						estimate, 70% of all websites are open to XSS attacks on their users.[55] Phishing is another common threat to the
+						Web. "SA, the Security Division of EMC, today announced the findings of its January 2013 Fraud Report, estimating the
+						global losses from phishing at $1.5 Billion in 2012".[56] Two of the well-known phishing methods are Covert Redirect
+						and Open Redirect. Proposed solutions vary. Large security companies like McAfee already design governance and compliance
+						suites to meet post-9/11 regulations,[57] and some, like Finjan have recommended active real-time inspection of programming
+						code and all content regardless of its source.[47] Some have argued that for enterprises to see Web security as a business
+						opportunity rather than a cost centre,[58] while others call for "ubiquitous, always-on digital rights management"
+						enforced in the infrastructure to replace the hundreds of companies that secure data and networks.[59] Jonathan Zittrain
+						has said users sharing responsibility for computing safety is far preferable to locking down the Internet.[60]
+					</p>
+					<p>23-What do criminals spread on the web?</p>
+
+
+					<div>
+						<div>
+							<input type="radio" name="q23" value="1" id="answer1" />
+							<label for="answer1">1)  Malware</label>
+						</div>
+						<div>
+							<input type="radio" name="q23" value="2" id="answer2" />
+							<label for="answer2">2)  Codes</label>
+						</div>
+						<div>
+							<input type="radio" name="q23" value="3" id="answer3" />
+							<label for="answer3">3) Scripts</label>
+						</div>
+						<div>
+							<input type="radio" name="q23" value="4" id="answer4" />
+							<label for="answer4">4)  Methods</label>
+						</div>
+						<div>
+							<input type="radio" name="q23" value="5" id="answer5" />
+							<label for="answer5">5) Proposed solutions</label>
+						</div>
+
+						<input type="button" onclick="showq24();" value="Confirmar" />
+
+					</div>
+
+
+				</div>
+
+				<div class="questao" id="questao24">
+					<h2>Questão 24:</h2>
+					<p>
+						<h2>STREAMING MEDIA</h2> is multimedia that is constantly received by and presented to an end-user while being delivered
+						by a provider. The verb "to stream" refers to the process of delivering or obtaining media in this manner; the term
+						refers to the delivery method of the medium, rather than the medium itself, and is an alternative to file downloading,
+						a process in which the end-user obtains the entire file for the content before watching or listening to it. A client
+						end-user can use their media player to begin to play the data file (such as a digital file of a movie or song) before
+						the entire file has been transmitted. Distinguishing delivery method from the media distributed applies specifically
+						to telecommunications networks, as most of the delivery systems are either inherently streaming (e.g. radio, television)
+						or inherently non-streaming (e.g. books, video cassettes, audio CDs). For example, in the 1930s, elevator music was
+						among the earliest popularly available streaming media; nowadays Internet television is a common form of streamed media.
+						The term "streaming media" can apply to media other than video and audio such as live closed captioning, ticker tape,
+						and real-time text, which are all considered "streaming text". The term "streaming" was first used for tape drives
+						made by Data Electronics Inc. for drives meant to slowly ramp up and run for the entire track; the slow ramp times
+						resulted in lower drive costs, making a more competitive product. "Streaming" was applied in the early 1990s as a better
+						description for video on demand on IP networks; at the time such video was usually referred to as "store and forward
+						video",[1]which was misleading nomenclature.
+					</p>
+					<p>24-Media streaming is a multimedia presented to an end user what would it be?</p>
+
+
+
+					<div>
+						<div>
+							<input type="radio" name="q24" value="1" id="answer1" />
+							<label for="answer1">1) Algorithm</label>
+						</div>
+						<div>
+							<input type="radio" name="q24" value="2" id="answer1" />
+							<label for="answer1">1) Provider</label>
+						</div>
+						<div>
+							<input type="radio" name="q24" value="3" id="answer2" />
+							<label for="answer2">2) Server</label>
+						</div>
+						<div>
+							<input type="radio" name="q24" value="4" id="answer3" />
+							<label for="answer3">3) User</label>
+						</div>
+						<div>
+							<input type="radio" name="q24" value="5" id="answer4" />
+							<label for="answer4">4) Processor</label>
+						</div>
+						<div>
+							<input type="radio" name="q24" value="1" id="answer5" />
+							<label for="answer5">5) Files</label>
+						</div>
+
+						<input type="button" onclick="showq25();" value="Confirmar" />
+
+					</div>
+
+				</div>
+
+				<div class="questao" id="questao25">
+					<h2>Questão 25:</h2>
+					<p>
+						<h2>ELECTRONIC PUBLISHING</h2>Electronic publishing (also referred to as e-publishing or digital publishing or online publishing)
+						includes the digital publication of e-books, digital magazines, and the development of digital libraries and catalogues.
+						Electronic publishing has become common in scientific publishing where it has been argued that peer-reviewed scientific
+						journals are in the process of being replaced by electronic publishing. It is also becoming common to distribute books,
+						magazines, and newspapers to consumers through tablet reading devices, a market that is growing by millions each year,[1]
+						generated by online vendors such as Apple's iTunes bookstore, Amazon's bookstore for Kindle, and books in the Google
+						Play Bookstore. Market research suggests that half of all magazine and newspaper circulation will be via digital delivery
+						by the end of 2015[2] and that half of all reading in the United States will be done without paper by 2015</p>
+
+
+					<p>25-According to the text, what is the advantages of the e- publishing?</p>
+
+
+					<div>
+						<div>
+							<input type="radio" name="q25" value="1" id="answer1" />
+							<label for="answer1">1) E-publishing of books is more fast and cheap</label>
+						</div>
+						<div>
+							<input type="radio" name="q25" value="2" id="answer2" />
+							<label for="answer2">2) E-publishing of books makes easy  to read in  phones , tablets and also reduce the use of paper</label>
+						</div>
+						<div>
+							<input type="radio" name="q25" value="3" id="answer3" />
+							<label for="answer3">3) Scientific journals publishing</label>
+						</div>
+						<div>
+							<input type="radio" name="q25" value="4" id="answer4" />
+							<label for="answer4">4)There’s no advantage in e-publishing since it raise the use of computers and energy</label>
+						</div>
+						<div>
+							<input type="radio" name="q25" value="5" id="answer5" />
+							<label for="answer5">5) Magazines and books published in the web can be downloaded  free</label>
+						</div>
+
+						<input type="submit" value="Confirmar" />
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="push"></div>
+	<footer>
+		<div class="wrapper">
+			<p>Copyright &copy; 2017</p>
+			<p>Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - Câmpus Caraguatatuba</p>
+			<p>Técnico em Informática para Internet - 1&ordm; Módulo</p>
+		</div>
+		<!-- .wrapper -->
+	</footer>
+	<script>
+		init();
+	</script>
+	<script src="js/jquery-2.2.0.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>
